@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap");
+
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--off-white);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px 10px 75px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 3rem 1.5rem;
+  width: 100%;
+}
+
+.top-row{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.inputs {
+  display: flex;
+  gap: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label span {
+  color: var(--smokey-grey);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+
+input {
+  max-width: 120px;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid var(--light-grey);
+  border-radius: 0.5rem;
+}
+
+
+button {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  background: var(--purple);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-left: auto;
+}
+
+button:hover {
+  background: var(--off-black);
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+  text-transform: lowercase;
+  color: var(--off-black);
+}
+
+.value {
+  color: var(--purple);
+  font-weight: 800;
+}
+
