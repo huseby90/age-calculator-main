@@ -24,7 +24,7 @@ button.addEventListener("click", function () {
     You haven't fully completed that last month yet, so you need to "borrow" from months:
 
     days   = -23 + 30 = 7
-    months = 4 - 1    = 0
+    months = 4 - 1    = 3
     
     */
 
