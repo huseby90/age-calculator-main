@@ -20,8 +20,8 @@ button.addEventListener("click", function () {
   let days = today.getDate() - birth.getDate();
   /* years  = 2025 - 1990 = 35
     months = 7 - 3       = 4
-    days   = 5 - 28      = -23  ← impossible 
-    You haven't fully completed that last month yet, so you need to "borrow" from months:
+    days   = 5 - 28      = -23  ← umulig 
+    Man må låne fra måneder
 
     days   = -23 + 30 = 7
     months = 4 - 1    = 3
